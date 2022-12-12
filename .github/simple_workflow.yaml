@@ -1,0 +1,13 @@
+name: "Say hello"
+on:
+  push: #executed on all push
+
+jobs:
+   say_hello: #first job declaration
+     name: "Say hello"
+     runs-on: ubuntu-latest
+     steps:
+        # the following step execute a shell script
+        - name: "Say hello"
+          run: | 
+            echo "hello, world !"
